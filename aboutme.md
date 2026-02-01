@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Readme
-permalink: /readme/
+title: About Me
+permalink: /aboutme/
 ---
 
-# Readme
+# About Me
 
 Welcome to my blog. I'm a developer who enjoys building things and learning new technologies.
 

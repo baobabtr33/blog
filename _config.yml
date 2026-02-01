@@ -1,0 +1,14 @@
+title: Blog
+description: Thoughts, ideas, and explorations
+theme: minima
+
+# Build settings
+markdown: Kramdown
+
+# Minima theme settings
+minima:
+  skin: dark
+
+# Social links (optional - uncomment to use)
+# twitter_username: your_username
+# github_username: baobabtr33

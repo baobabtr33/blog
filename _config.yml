@@ -1,5 +1,7 @@
 title: Blog
 description: Thoughts, ideas, and explorations
+url: "https://baobabtr33.github.io"
+baseurl: "/blog"
 theme: minima
 
 # Build settings

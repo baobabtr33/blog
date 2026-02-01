@@ -2,6 +2,7 @@
 layout: post
 title: "Hello World"
 date: 2026-02-01
+category: miscel
 ---
 
 Welcome to my blog. This is where I'll share my thoughts on technology, programming, and whatever else captures my interest.

@@ -6,6 +6,7 @@
   --link-color: #58a6ff;
   --border-color: #30363d;
   --accent-color: #238636;
+  --sidebar-width: 220px;
 }
 
 * {
@@ -24,20 +25,16 @@ body {
   flex-direction: column;
 }
 
-.wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
 /* Header */
 .site-header {
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 
-.site-header .wrapper {
+.header-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,10 +58,73 @@ body {
   color: var(--link-color);
 }
 
+/* Container with Sidebar */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  padding: 2rem 1rem;
+  flex-shrink: 0;
+}
+
+.folder-nav h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.folder-nav ul {
+  list-style: none;
+}
+
+.folder-nav li {
+  margin-bottom: 0.25rem;
+}
+
+.folder {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+  font-size: 0.95rem;
+}
+
+.folder:hover {
+  background: rgba(88, 166, 255, 0.1);
+  color: var(--link-color);
+}
+
+.folder.active {
+  background: rgba(88, 166, 255, 0.15);
+  color: var(--link-color);
+}
+
+.folder-icon {
+  font-size: 1rem;
+}
+
 /* Main Content */
 .page-content {
   flex: 1;
-  padding: 3rem 0;
+  padding: 2rem;
+  min-width: 0;
 }
 
 /* Home Page */
@@ -81,12 +141,33 @@ body {
 }
 
 .home h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 1.5rem;
+}
+
+/* Category Page */
+.category-page h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.category-description {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.empty-category {
+  background: var(--bg-secondary);
+  border: 1px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 3rem;
+  text-align: center;
+  color: var(--text-muted);
 }
 
 /* Post List */
@@ -110,6 +191,14 @@ body {
 .post-meta {
   color: var(--text-muted);
   font-size: 0.85rem;
+}
+
+.post-category {
+  background: var(--border-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
 }
 
 .post-list h3 {
@@ -139,18 +228,18 @@ body {
 }
 
 .post-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .post-content {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
 }
 
 .post-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 2rem 0 1rem;
   color: var(--text-color);
 }
@@ -196,8 +285,13 @@ body {
 .site-footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
-  padding: 2rem 0;
+  padding: 2rem;
   margin-top: auto;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-content {
@@ -231,28 +325,69 @@ body {
 
 /* About Page */
 .about-content {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem;
 }
 
 .about-content p {
   margin-bottom: 1.5rem;
 }
 
+.about-content ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.about-content a {
+  color: var(--link-color);
+}
+
 /* Responsive */
-@media (max-width: 600px) {
-  .wrapper {
-    padding: 0 1rem;
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
 
-  .site-header .wrapper {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem;
+  }
+
+  .folder-nav ul {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .folder-nav h3 {
+    display: none;
+  }
+
+  .folder {
+    padding: 0.5rem 1rem;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+  }
+
+  .header-wrapper {
     flex-direction: column;
     gap: 1rem;
   }
 
   .site-nav a {
     margin-left: 0;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
   }
 
   .footer-content {
@@ -263,5 +398,9 @@ body {
 
   .home .page-heading {
     font-size: 2rem;
+  }
+
+  .page-content {
+    padding: 1.5rem;
   }
 }

@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="wrapper">
+    <div class="header-wrapper">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Home</a>
@@ -18,14 +18,37 @@
     </div>
   </header>
 
-  <main class="page-content">
-    <div class="wrapper">
+  <div class="container">
+    <aside class="sidebar">
+      <nav class="folder-nav">
+        <h3>Categories</h3>
+        <ul>
+          <li>
+            <a href="{{ '/finance/' | relative_url }}" class="folder {% if page.category == 'finance' %}active{% endif %}">
+              <span class="folder-icon">📁</span> Finance
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/tech/' | relative_url }}" class="folder {% if page.category == 'tech' %}active{% endif %}">
+              <span class="folder-icon">📁</span> Tech
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/miscel/' | relative_url }}" class="folder {% if page.category == 'miscel' %}active{% endif %}">
+              <span class="folder-icon">📁</span> Miscellaneous
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="page-content">
       {{ content }}
-    </div>
-  </main>
+    </main>
+  </div>
 
   <footer class="site-footer">
-    <div class="wrapper">
+    <div class="footer-wrapper">
       <div class="footer-content">
         <p>{{ site.description }}</p>
         {% include analytics.html %}

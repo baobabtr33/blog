@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class="about-content">
+<div class="about-content" markdown="1">
 
 # About
 
@@ -19,7 +19,6 @@ Welcome to my blog. I'm a developer who enjoys building things and learning new 
 
 ## Connect
 
-- LinkedIn: [Junghwan Kim](https://www.linkedin.com/in/junghwan-kim-6293741a5/)
-- GitHub: [baobabtr33](https://github.com/baobabtr33)
+- [LinkedIn](https://www.linkedin.com/in/junghwan-kim-6293741a5/)
 
 </div>

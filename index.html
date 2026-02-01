@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fafafa;
+        }
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        article {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        article h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        article h2 a {
+            color: #333;
+            text-decoration: none;
+        }
+        article h2 a:hover {
+            color: #0066cc;
+        }
+        .meta {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .excerpt {
+            color: #555;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <p class="tagline">Thoughts, ideas, and explorations</p>
+    </header>
+
+    <main>
+        <article>
+            <h2><a href="posts/hello-world.html">Hello World</a></h2>
+            <p class="meta">February 1, 2026</p>
+            <p class="excerpt">Welcome to my blog. This is where I'll share my thoughts on technology, programming, and whatever else captures my interest...</p>
+        </article>
+
+        <article>
+            <h2><a href="posts/getting-started.html">Getting Started with GitHub Pages</a></h2>
+            <p class="meta">February 1, 2026</p>
+            <p class="excerpt">GitHub Pages is an excellent way to host a blog or personal website for free. Here's how I set up this blog...</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Hosted on <a href="https://pages.github.com">GitHub Pages</a></p>
+    </footer>
+</body>
+</html>

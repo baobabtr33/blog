@@ -13,7 +13,6 @@
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/readme' | relative_url }}">Readme</a>
       </nav>
     </div>
   </header>
@@ -21,6 +20,7 @@
   <div class="container">
     <aside class="sidebar">
       <nav class="folder-nav">
+        <a href="{{ '/readme' | relative_url }}" class="about-me-link">About Me</a>
         <h3>Categories</h3>
         <ul>
           <li>

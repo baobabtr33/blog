@@ -76,6 +76,21 @@ body {
   flex-shrink: 0;
 }
 
+.about-me-link {
+  display: block;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-me-link:hover {
+  color: var(--link-color);
+}
+
 .folder-nav h3 {
   font-size: 0.75rem;
   font-weight: 600;

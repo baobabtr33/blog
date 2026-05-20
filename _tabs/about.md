@@ -6,15 +6,29 @@ redirect_from:
   - /aboutme/
 ---
 
-Welcome to my blog. I'm a developer who enjoys building things and learning new technologies.
+I'm **Junghwan (Steve) Kim** — a graduate researcher and engineer working on high-performance computing and AI infrastructure.
 
-## What I Write About
+This blog is where I write up engineering notes from the work I do day to day.
 
-- Programming and software development
-- Tools and workflows
-- Lessons learned from projects
-- Technology insights
+## What I write about
+
+- **High-performance computing (HPC)** — distributed training, collective communication, GPU clusters
+- **AI infrastructure** — training systems, inference serving, scheduling, fault tolerance
+- **Datacenter networking** — switches, fabrics, RDMA, InfiniBand, RoCE, topology
+- **NCCL** — collective communication library internals, tuning, debugging
+- **Profiling** — Nsight, perf, eBPF, and tracing workflows for finding bottlenecks
+- **Graduate research life** — papers, experiments, advisor dynamics, the long arc
+
+Most posts are short, written for engineers and researchers who already know the surrounding context — closer to a lab notebook than tutorials.
+
+## Background
+
+I work at the intersection of systems and ML. If you're working on training-cluster networking, collective comms, scheduling, or storage for large-model training, I'd be glad to chat.
 
 ## Connect
 
-- [LinkedIn](https://www.linkedin.com/in/junghwan-kim-6293741a5/)
+- **LinkedIn:** [linkedin.com/in/junghwan-kim-6293741a5](https://www.linkedin.com/in/junghwan-kim-6293741a5/)
+- **GitHub:** [github.com/baobabtr33](https://github.com/baobabtr33)
+- **Email:** stevekim01310@gmail.com
+
+If you're recruiting in HPC, AI infra, or systems research, feel free to reach out via LinkedIn or email.

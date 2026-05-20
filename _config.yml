@@ -4,9 +4,11 @@ lang: en
 timezone: America/New_York
 
 title: Junghwan (Steve) Kim
-tagline: Thoughts, ideas, and explorations
+tagline: HPC, AI infrastructure, networking, and graduate research notes
 description: >-
-  Personal blog on technology, finance, and other explorations.
+  Engineering notes on high-performance computing (HPC), AI infrastructure,
+  datacenter networking, NCCL, profiling, and life in graduate research.
+  Written by Junghwan (Steve) Kim.
 
 url: "https://baobabtr33.github.io"
 baseurl: "/blog"
@@ -27,6 +29,15 @@ theme_mode:
 analytics:
   google:
     id: G-6RRC3L5LE1
+
+# Site verification settings — fill in IDs to verify ownership.
+webmaster_verifications:
+  google: # Search Console verification meta tag content
+  bing: # Bing Webmaster Tools verification id
+  alexa:
+  yandex:
+  baidu:
+  facebook:
 
 # Table of contents on the right sidebar of posts
 toc: true

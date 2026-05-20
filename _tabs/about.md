@@ -12,12 +12,14 @@ This blog is where I write up engineering notes from the work I do day to day.
 
 ## What I write about
 
-- **High-performance computing (HPC)** — distributed training, collective communication, GPU clusters
-- **AI infrastructure** — training systems, inference serving, scheduling, fault tolerance
-- **Datacenter networking** — switches, fabrics, RDMA, InfiniBand, RoCE, topology
+- **[High-performance computing (HPC)](/blog/topics/hpc/)** — distributed training, collective communication, GPU clusters
+- **[AI infrastructure](/blog/topics/ai-infrastructure/)** — training systems, inference serving, scheduling, fault tolerance
+- **[Datacenter networking](/blog/topics/networking/)** — switches, fabrics, RDMA, InfiniBand, RoCE, topology
 - **NCCL** — collective communication library internals, tuning, debugging
 - **Profiling** — Nsight, perf, eBPF, and tracing workflows for finding bottlenecks
-- **Graduate research life** — papers, experiments, advisor dynamics, the long arc
+- **[Graduate research life](/blog/topics/research/)** — papers, experiments, advisor dynamics, the long arc
+
+Full topic index at **[/topics/](/blog/topics/)**.
 
 Most posts are short, written for engineers and researchers who already know the surrounding context — closer to a lab notebook than tutorials.
 

@@ -1,6 +1,6 @@
 ---
-title: "Hello World"
-date: 2026-02-01 10:00:00 -0500
+title: "Hello, World. Welcome to my blog"
+date: 2026-05-21 10:00:00 -0500
 categories: [Miscellaneous]
 tags: [intro]
 ---
@@ -13,9 +13,12 @@ Starting a blog has been on my list for a while. There's something valuable abou
 
 I plan to write about:
 
-- Programming and software development
 - Tools and workflows that I find useful
+- Data Centers
+- HPC 
+- Distributed Computing
 - Lessons learned from projects
 - Interesting problems and their solutions
+- Personal Interests 
 
 Thanks for stopping by. Stay tuned for more posts.

@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Hello World"
-date: 2026-02-01
-category: miscel
+date: 2026-02-01 10:00:00 -0500
+categories: [Miscellaneous]
+tags: [intro]
 ---
 
 Welcome to my blog. This is where I'll share my thoughts on technology, programming, and whatever else captures my interest.

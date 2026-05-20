@@ -1,10 +1,10 @@
 ---
-layout: default
-title: About Me
-permalink: /aboutme/
+title: About
+icon: fas fa-info-circle
+order: 4
+redirect_from:
+  - /aboutme/
 ---
-
-# About Me
 
 Welcome to my blog. I'm a developer who enjoys building things and learning new technologies.
 

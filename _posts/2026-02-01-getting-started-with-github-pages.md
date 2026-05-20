@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Getting Started with GitHub Pages"
-date: 2026-02-01
-category: tech
+date: 2026-02-01 12:00:00 -0500
+categories: [Tech]
+tags: [github-pages, jekyll, blogging]
 ---
 
 GitHub Pages is an excellent way to host a blog or personal website for free. It serves static content directly from a GitHub repository, making it perfect for blogs, portfolios, and documentation sites.

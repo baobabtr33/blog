@@ -1,11 +1,102 @@
+theme: jekyll-theme-chirpy
+
+lang: en
+timezone: America/New_York
+
 title: Junghwan (Steve) Kim
-description: Thoughts, ideas, and explorations
+tagline: Thoughts, ideas, and explorations
+description: >-
+  Personal blog on technology, finance, and other explorations.
+
 url: "https://baobabtr33.github.io"
 baseurl: "/blog"
 
-# Build settings
-markdown: kramdown
+github:
+  username: baobabtr33
 
-# Exclude files
+social:
+  name: Junghwan (Steve) Kim
+  email: stevekim01310@gmail.com
+  links:
+    - https://www.linkedin.com/in/junghwan-kim-6293741a5/
+    - https://github.com/baobabtr33
+
+# null = auto (follow OS), or "light" / "dark"
+theme_mode:
+
+analytics:
+  google:
+    id: G-6RRC3L5LE1
+
+# Table of contents on the right sidebar of posts
+toc: true
+
+paginate: 10
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+plugins:
+  - jekyll-redirect-from
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
 exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
   - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+  - draft
+  - ideas.md
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

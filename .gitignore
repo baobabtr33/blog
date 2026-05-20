@@ -8,3 +8,6 @@ _site/
 .sass-cache/
 vendor/
 .bundle/
+
+# Auto-generated PDFs from editor/IDE markdown exporters
+*.pdf

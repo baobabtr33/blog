@@ -10,9 +10,10 @@ This blog focuses on the systems side of large-scale ML and high-performance com
 
 ## Areas
 
+- **[Data centers](/blog/topics/data-centers/)** — site selection, capacity planning, floor layout, power and cooling, cabling, transceivers.
+- **[Datacenter networking](/blog/topics/networking/)** — switches, fabrics, RDMA, InfiniBand, RoCE, NCCL, topology design.
 - **[High-performance computing (HPC)](/blog/topics/hpc/)** — distributed training, GPU clusters, collective communication, parallel programming.
 - **[AI infrastructure](/blog/topics/ai-infrastructure/)** — training systems, inference serving, schedulers, storage, observability.
-- **[Datacenter networking](/blog/topics/networking/)** — switches, fabrics, RDMA, InfiniBand, RoCE, NCCL, topology design.
 - **[Graduate research](/blog/topics/research/)** — papers, experiments, life in a research lab.
 
 For everything in chronological order, see the [archives](/blog/archives/) or browse by [category](/blog/categories/).

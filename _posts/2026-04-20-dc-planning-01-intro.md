@@ -3,6 +3,7 @@ title: "Data Center Planning 1: What a Data Center Actually Is"
 date: 2026-04-20 10:00:00 -0500
 categories: [Data Centers]
 tags: [data-centers, infrastructure, planning, series]
+permalink: /posts/dc-planning-01-intro/
 description: >-
   How I got into data center engineering, and a working definition of what a
   data center actually is. The physical layer that everything in the cloud

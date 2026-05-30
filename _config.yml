@@ -3,6 +3,9 @@ theme: jekyll-theme-chirpy
 lang: en
 timezone: America/New_York
 
+# Build posts dated slightly ahead of the CI build clock (avoids future-dated posts 404ing)
+future: true
+
 title: Junghwan (Steve) Kim
 tagline: HPC, AI infrastructure, networking, and graduate research notes
 description: >-

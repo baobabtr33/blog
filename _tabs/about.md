@@ -6,7 +6,7 @@ redirect_from:
   - /aboutme/
 ---
 
-I'm **Junghwan (Steve) Kim**, a graduate researcher and engineer working on data centers, AI infrastructure, and high performance computing. I am open to AI infrastructure and data center internships and new graduate roles.
+I'm **Junghwan (Steve) Kim**, an engineer working on data centers, AI infrastructure, and high performance computing. I am starting an MS in Networked Systems at UC Irvine in Fall 2026, and I am looking for full time and internship positions in AI infrastructure and data centers.
 
 This blog is where I write up engineering notes from the work I do day to day.
 
@@ -23,8 +23,6 @@ Each topic below is an evergreen entry point that collects my notes in that area
 - [Graduate research life](/blog/topics/research/) covers papers, experiments, and the long arc of a research program.
 
 Full topic index at [/topics/](/blog/topics/).
-
-Most posts are short, written for engineers and researchers who already know the surrounding context, closer to a lab notebook than tutorials.
 
 ## Background
 

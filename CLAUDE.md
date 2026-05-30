@@ -11,6 +11,10 @@ Personal blog built with Jekyll and the Chirpy theme, deployed by GitHub Actions
 
 See the user memory `feedback_writing_style`. No em dashes, no colons in body prose, no `**Label** —` bullets.
 
+### Neutral framing
+
+No winner or loser framing. Stay neutral. Every company is a market player, not a hero or a villain. Evaluate only on metrics and facts, never on vibes. Do not disparage companies or ideas. Lay the facts out and let the reader judge. When comparing options (Ethernet vs InfiniBand, one vendor vs another, one site vs another), describe the trade-offs each one makes rather than crowning a best.
+
 ## Verify a published post is live (no 404)
 
 After publishing (commit + push to `main`), the deploy is not instant and a post can silently fail to build. Always verify with curl rather than assuming.
@@ -41,7 +45,7 @@ ResearchGate images sit behind Cloudflare and cannot be downloaded with curl (er
 
 ## Sidebar avatar
 
-`avatar:` in `_config.yml` is set to a LinkedIn `media.licdn.com` photo URL. These URLs are signed and expire (the current one has `e=1781740800`, mid-2026), so when the avatar disappears, get a fresh URL from the user. Chirpy's avatar `<img>` has an `onerror` handler that hides it if it fails, so a dead link degrades gracefully rather than showing a broken icon. The robust alternative is to save the photo to `assets/img/avatar.jpg` and point `avatar:` there, but the user prefers the direct LinkedIn link.
+`avatar:` in `_config.yml` points to the local file `/assets/img/cover-face-linkedin.jpg`. Chirpy prepends the `/blog` baseurl automatically. Chirpy's avatar `<img>` has an `onerror` handler that hides it if it fails, so a missing file degrades gracefully rather than showing a broken icon.
 
 ## Sidebar categories
 

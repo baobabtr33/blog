@@ -47,9 +47,9 @@ ResearchGate images sit behind Cloudflare and cannot be downloaded with curl (er
 
 `avatar:` in `_config.yml` points to the local file `/assets/img/cover-face-linkedin.jpg`. Chirpy prepends the `/blog` baseurl automatically. Chirpy's avatar `<img>` has an `onerror` handler that hides it if it fails, so a missing file degrades gracefully rather than showing a broken icon.
 
-## Sidebar categories
+## Categories page
 
-`_includes/sidebar.html` is a project override of the Chirpy template (based on the v7.3.0 version) that adds a category list under the nav tabs, each entry linking to `/categories/<slug>/` with a post count. If the Chirpy major version changes, re-sync this file against the upstream template so the rest of the sidebar markup stays consistent.
+`_layouts/categories.html` is a project override that lists every category with its posts unfolded as direct hyperlinks (no collapse chevron). It is based on the Chirpy v7.3.0 layout. If the Chirpy major version changes, re-check it against the upstream layout.
 
 ## Tab and page layouts
 

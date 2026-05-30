@@ -41,7 +41,11 @@ ResearchGate images sit behind Cloudflare and cannot be downloaded with curl (er
 
 ## Sidebar avatar
 
-`avatar:` in `_config.yml` points to `/assets/img/avatar.jpg`. LinkedIn blocks curl and its `media.licdn.com` URLs are signed and expire, so the photo cannot be fetched programmatically. The user saves their profile photo to `assets/img/avatar.jpg` by hand. Until the file exists the URL 404s, but Chirpy's avatar `<img>` has an `onerror` handler that hides it, so there is no broken-image icon.
+`avatar:` in `_config.yml` is set to a LinkedIn `media.licdn.com` photo URL. These URLs are signed and expire (the current one has `e=1781740800`, mid-2026), so when the avatar disappears, get a fresh URL from the user. Chirpy's avatar `<img>` has an `onerror` handler that hides it if it fails, so a dead link degrades gracefully rather than showing a broken icon. The robust alternative is to save the photo to `assets/img/avatar.jpg` and point `avatar:` there, but the user prefers the direct LinkedIn link.
+
+## Sidebar categories
+
+`_includes/sidebar.html` is a project override of the Chirpy template (based on the v7.3.0 version) that adds a category list under the nav tabs, each entry linking to `/categories/<slug>/` with a post count. If the Chirpy major version changes, re-sync this file against the upstream template so the rest of the sidebar markup stays consistent.
 
 ## Tab and page layouts
 

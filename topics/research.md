@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Graduate Research
 permalink: /topics/research/
 description: >-
@@ -7,7 +8,6 @@ description: >-
   HPC and ML.
 ---
 
-# Graduate Research
 
 Notes from the research side of my work — life in a lab, papers in progress, and what I've learned from the long arc of a PhD.
 

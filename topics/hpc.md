@@ -1,4 +1,5 @@
 ---
+layout: page
 title: High-Performance Computing (HPC)
 permalink: /topics/hpc/
 description: >-
@@ -7,7 +8,6 @@ description: >-
   and HPC system design.
 ---
 
-# High-Performance Computing
 
 Notes from the HPC side of my work — the systems that scale machine learning and scientific computing to large GPU clusters.
 

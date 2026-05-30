@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Data Centers
 permalink: /topics/data-centers/
 description: >-
@@ -7,7 +8,6 @@ description: >-
   details behind modern AI and HPC facilities.
 ---
 
-# Data Centers
 
 Notes on the physical and operational side of data center engineering — the layer below the fabric.
 

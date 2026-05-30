@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Datacenter Networking
 permalink: /topics/networking/
 description: >-
@@ -7,7 +8,6 @@ description: >-
   communication.
 ---
 
-# Datacenter Networking
 
 Notes on the fabrics that move bytes between GPUs — the layer that quietly determines whether your training job converges in days or weeks.
 

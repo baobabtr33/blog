@@ -1,4 +1,5 @@
 ---
+layout: page
 title: AI Infrastructure
 permalink: /topics/ai-infrastructure/
 description: >-
@@ -7,7 +8,6 @@ description: >-
   machine learning.
 ---
 
-# AI Infrastructure
 
 The plumbing that lets large models train and serve at scale — schedulers, storage, networking, runtime, observability.
 

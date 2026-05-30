@@ -26,6 +26,9 @@ social:
     - https://www.linkedin.com/in/junghwan-kim-6293741a5/
     - https://github.com/baobabtr33
 
+# Sidebar profile photo. Save the LinkedIn picture to this path (see CLAUDE.md).
+avatar: /assets/img/avatar.jpg
+
 # null = auto (follow OS), or "light" / "dark"
 theme_mode:
 

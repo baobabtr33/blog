@@ -7,11 +7,12 @@ timezone: America/New_York
 future: true
 
 title: Junghwan (Steve) Kim
-tagline: HPC, AI infrastructure, networking, and graduate research notes
+tagline: Data center, AI infrastructure, networking, and HPC notes from a graduate researcher
 description: >-
-  Engineering notes on high-performance computing (HPC), AI infrastructure,
-  datacenter networking, NCCL, profiling, and life in graduate research.
-  Written by Junghwan (Steve) Kim.
+  Engineering notes on data centers, AI infrastructure, datacenter networking,
+  high performance computing (HPC), NCCL, and GPU clusters. Written by Junghwan
+  (Steve) Kim, a graduate researcher and engineer open to AI infrastructure and
+  data center internships and new graduate roles.
 
 url: "https://baobabtr33.github.io"
 baseurl: "/blog"
@@ -28,6 +29,9 @@ social:
 
 # Sidebar profile photo.
 avatar: /assets/img/cover-face-linkedin.jpg
+
+# Default image used when a page is shared on social platforms.
+social_preview_image: /assets/img/cover-face-linkedin.jpg
 
 # null = auto (follow OS), or "light" / "dark"
 theme_mode:

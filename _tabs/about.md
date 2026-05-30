@@ -6,27 +6,29 @@ redirect_from:
   - /aboutme/
 ---
 
-I'm **Junghwan (Steve) Kim** — a graduate researcher and engineer working on high-performance computing and AI infrastructure.
+I'm **Junghwan (Steve) Kim**, a graduate researcher and engineer working on data centers, AI infrastructure, and high performance computing. I am open to AI infrastructure and data center internships and new graduate roles.
 
 This blog is where I write up engineering notes from the work I do day to day.
 
 ## What I write about
 
-- **[Data centers](/blog/topics/data-centers/)** — site selection, capacity planning, power and cooling, cabling, transceivers
-- **[Datacenter networking](/blog/topics/networking/)** — switches, fabrics, RDMA, InfiniBand, RoCE, topology
-- **[High-performance computing (HPC)](/blog/topics/hpc/)** — distributed training, collective communication, GPU clusters
-- **[AI infrastructure](/blog/topics/ai-infrastructure/)** — training systems, inference serving, scheduling, fault tolerance
-- **NCCL** — collective communication library internals, tuning, debugging
-- **Profiling** — Nsight, perf, eBPF, and tracing workflows for finding bottlenecks
-- **[Graduate research life](/blog/topics/research/)** — papers, experiments, advisor dynamics, the long arc
+Each topic below is an evergreen entry point that collects my notes in that area.
 
-Full topic index at **[/topics/](/blog/topics/)**.
+- [Data centers](/blog/topics/data-centers/) covers site selection, capacity planning, power and cooling, cabling, and transceivers.
+- [Data center networking](/blog/topics/networking/) covers switches, fabrics, RDMA, InfiniBand, RoCE, and topology design.
+- [High performance computing (HPC)](/blog/topics/hpc/) covers distributed training, collective communication, and GPU clusters.
+- [AI infrastructure](/blog/topics/ai-infrastructure/) covers training systems, inference serving, scheduling, and fault tolerance.
+- NCCL, where I dig into collective communication library internals, tuning, and debugging.
+- Profiling with Nsight, perf, eBPF, and tracing workflows for finding bottlenecks.
+- [Graduate research life](/blog/topics/research/) covers papers, experiments, and the long arc of a research program.
 
-Most posts are short, written for engineers and researchers who already know the surrounding context — closer to a lab notebook than tutorials.
+Full topic index at [/topics/](/blog/topics/).
+
+Most posts are short, written for engineers and researchers who already know the surrounding context, closer to a lab notebook than tutorials.
 
 ## Background
 
-I work at the intersection of systems and ML. If you're working on training-cluster networking, collective comms, scheduling, or storage for large-model training, I'd be glad to chat.
+I work at the intersection of systems and machine learning. If you are building training cluster networking, collective communication, scheduling, or storage for large model training, I would be glad to chat.
 
 ## Connect
 

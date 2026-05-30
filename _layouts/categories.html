@@ -1,0 +1,57 @@
+---
+layout: page
+# All categories, with each category's posts listed unfolded as links.
+---
+
+{% include lang.html %}
+
+{% assign sort_categories = site.categories | sort %}
+
+{% for category in sort_categories %}
+  {% assign category_name = category | first %}
+  {% assign posts_of_category = category | last %}
+  {% assign first_post = posts_of_category | first %}
+
+  <!-- Only render top-level categories (a category that is some post's first category). -->
+  {% if category_name == first_post.categories[0] %}
+    {% assign top_posts_size = posts_of_category | size %}
+
+    <div class="card categories">
+      <!-- category header -->
+      <div class="card-header d-flex justify-content-between">
+        <span class="ms-2">
+          <i class="far fa-folder-open fa-fw"></i>
+
+          {% capture _category_url %}/categories/{{ category_name | slugify | url_encode }}/{% endcapture %}
+          <a href="{{ _category_url | relative_url }}" class="mx-2">{{ category_name }}</a>
+
+          <span class="text-muted small font-weight-light">
+            {{ top_posts_size }}
+            {% if top_posts_size > 1 %}
+              {{ site.data.locales[lang].categories.post_measure.plural | default: 'posts' }}
+            {% else %}
+              {{ site.data.locales[lang].categories.post_measure.singular | default: 'post' }}
+            {% endif %}
+          </span>
+        </span>
+      </div>
+      <!-- .card-header -->
+
+      <!-- posts, always shown as links -->
+      <ul class="list-group">
+        {% for post in posts_of_category %}
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="ms-2">
+              <i class="far fa-file fa-fw text-muted"></i>
+              <a href="{{ post.url | relative_url }}" class="mx-2">{{ post.title }}</a>
+            </span>
+            <span class="text-muted small font-weight-light text-nowrap">
+              {{ post.date | date: '%Y-%m-%d' }}
+            </span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!-- .card -->
+  {% endif %}
+{% endfor %}

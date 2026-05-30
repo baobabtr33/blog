@@ -47,6 +47,23 @@ ResearchGate images sit behind Cloudflare and cannot be downloaded with curl (er
 
 `avatar:` in `_config.yml` points to the local file `/assets/img/cover-face-linkedin.jpg`. Chirpy prepends the `/blog` baseurl automatically. Chirpy's avatar `<img>` has an `onerror` handler that hides it if it fails, so a missing file degrades gracefully rather than showing a broken icon.
 
+## SEO
+
+Chirpy already emits canonical tags, BlogPosting and WebPage JSON-LD, Open Graph and Twitter cards, a sitemap, and robots.txt. The About page also carries a hand-written Person schema (name, alternate names, sameAs to LinkedIn and GitHub). So per-post SEO is about content and on-page hygiene, not adding more metadata. Apply this checklist to every published post.
+
+- Write the title for the search query, not just a clever phrase. Include the concrete words a reader would type, for example "Why Amdahl's Law caps GPU cluster scaling" rather than "Amdahl's Law".
+- Set a `description` in front matter, roughly 150 characters, containing the main phrase. Without it Chirpy falls back to the first paragraph.
+- Put the target phrase in the first paragraph, naturally.
+- Give every image descriptive alt text.
+- Link to at least one related post, and link glossary terms when a post uses them. Internal links spread authority and help crawling.
+- Set `categories` and `tags`, and keep tags consistent across a series.
+- Keep permalinks stable and human readable. Never change a published permalink.
+- No keyword stuffing. Stay neutral and factual per the writing-style and neutral-framing memories.
+
+Target long-tail phrases and the author's name, not head terms like "AI infrastructure" that large vendors own. The goal set for this site is to be found for data center, AI infrastructure, datacenter networking, and graduate or new-grad and internship job search, plus the name Junghwan (Steve) Kim.
+
+Site-level work that is still pending and gates everything else: verify Google Search Console and Bing Webmaster Tools (the empty fields in `_config.yml` under `webmaster_verifications`) and submit `sitemap.xml`. Nothing ranks until the site is indexed.
+
 ## Categories page
 
 `_layouts/categories.html` is a project override that lists every category with its posts unfolded as direct hyperlinks (no collapse chevron). It is based on the Chirpy v7.3.0 layout. If the Chirpy major version changes, re-check it against the upstream layout.

@@ -26,8 +26,8 @@ social:
     - https://www.linkedin.com/in/junghwan-kim-6293741a5/
     - https://github.com/baobabtr33
 
-# Sidebar profile photo. Save the LinkedIn picture to this path (see CLAUDE.md).
-avatar: /assets/img/avatar.jpg
+# Sidebar profile photo. LinkedIn CDN URL (note: this link is signed and expires).
+avatar: https://media.licdn.com/dms/image/v2/D5603AQGNILaVEGszPg/profile-displayphoto-shrink_400_400/B56ZcM3QO9HwAg-/0/1748267502904?e=1781740800&v=beta&t=3haOsG8irzuP8O0V50y4bBMh2ELMFKJ8qzLRre-PJ1Y
 
 # null = auto (follow OS), or "light" / "dark"
 theme_mode:

@@ -37,3 +37,30 @@ I work at the intersection of systems and machine learning. If you are building 
 Find me on [LinkedIn](https://www.linkedin.com/in/junghwan-kim-6293741a5/) and [GitHub](https://github.com/baobabtr33), or email me at stevekim01310 at gmail.com.
 
 If you are hiring for data center, AI infrastructure, networking, or systems roles, whether internship or full time, I would be glad to hear from you.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Junghwan (Steve) Kim",
+  "alternateName": ["Junghwan Kim", "Steve Kim"],
+  "jobTitle": "Data center and AI infrastructure engineer",
+  "description": "Data center and AI infrastructure engineer and incoming MS in Networked Systems at UC Irvine, Fall 2026, seeking full time and internship roles.",
+  "url": "https://baobabtr33.github.io/blog/",
+  "knowsAbout": [
+    "Data centers",
+    "AI infrastructure",
+    "Datacenter networking",
+    "High performance computing",
+    "GPU clusters",
+    "NCCL",
+    "RDMA",
+    "InfiniBand",
+    "RoCE"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/junghwan-kim-6293741a5/",
+    "https://github.com/baobabtr33"
+  ]
+}
+</script>

@@ -1,5 +1,5 @@
 ---
-title: "Data Center Planning 1: What a Data Center Actually Is"
+title: "Data Center Planning: What a Data Center Actually Is"
 date: 2026-04-20 10:00:00 -0500
 categories: [Data Centers]
 tags: [data-centers, infrastructure, planning, series]

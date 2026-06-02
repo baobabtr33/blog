@@ -70,6 +70,10 @@ Target long-tail phrases and the author's name, not head terms like "AI infrastr
 
 Site-level work that is still pending and gates everything else: verify Google Search Console and Bing Webmaster Tools (the empty fields in `_config.yml` under `webmaster_verifications`) and submit `sitemap.xml`. Nothing ranks until the site is indexed.
 
+## Series posts
+
+Posts that belong to a series (Data Center Networking, Data Center Planning, Life of a) keep their order through the filename date and the `NN` in the filename and permalink, for example `2026-05-02-dc-networking-06-congestion-control.md` and `/posts/dc-networking-06-congestion-control/`. The displayed `title` does NOT show the series number. Write "Data Center Networking: Congestion Control", not "Data Center Networking 6: Congestion Control". This keeps a partially-published series coherent, so post 6 going live before posts 0 through 5 does not show a confusing "6" to a reader. Ordering stays implicit through dates and the Previously/Next links inside the posts.
+
 ## Categories page
 
 `_layouts/categories.html` is a project override that lists every category with its posts unfolded as direct hyperlinks (no collapse chevron). It is based on the Chirpy v7.3.0 layout. If the Chirpy major version changes, re-check it against the upstream layout.

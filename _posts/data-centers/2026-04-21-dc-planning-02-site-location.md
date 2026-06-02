@@ -1,5 +1,5 @@
 ---
-title: "Data Center Planning 2: Site Location and High Availability"
+title: "Data Center Planning: Site Location and High Availability"
 date: 2026-04-21 10:00:00 -0500
 categories: [Data Centers]
 tags: [data-centers, infrastructure, planning, site-selection, high-availability, series]

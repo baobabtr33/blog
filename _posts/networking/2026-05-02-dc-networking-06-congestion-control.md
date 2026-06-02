@@ -1,5 +1,5 @@
 ---
-title: "Data Center Networking 6: Congestion Control"
+title: "Data Center Networking: Congestion Control"
 date: 2026-05-02 11:00:00 -0500
 categories: [Networking]
 tags: [networking, congestion-control, pfc, ecn, dcqcn, roce, rdma, gpu, telemetry, series]

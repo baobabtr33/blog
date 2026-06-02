@@ -77,6 +77,8 @@ If you operate globally, you often do not get to choose the optimal location. Yo
 
 Jurisdiction also affects law enforcement access. Data in the US is subject to US legal process. Data in Germany is subject to German legal process. Sovereignty concerns have driven some organizations to build in specific locations specifically to limit which governments can compel access.
 
+Finance has a clean rule of thumb for handling conflicting regimes. When jurisdictions disagree, you design to the strictest one. The CFA Institute's first standard, knowledge of the law, says that when applicable laws or regulations conflict, you comply with the more strict requirement. Applied to a data center build, you do not try to thread the needle between regimes. You assume the tightest residency and access rule applies everywhere your data might land and you architect to satisfy that, because meeting the strictest rule by definition satisfies the looser ones.
+
 ## Network connectivity and carrier neutrality
 
 You want your data center to connect to multiple network carriers. If your facility only has one carrier and that carrier has an outage, your entire DC goes offline from a network perspective even if all the hardware is running fine.
@@ -102,5 +104,6 @@ The 3ms / 300km rule is the stake in the ground. Everything else negotiates arou
 
 - [Calculating optical fiber latency](https://www.m2optics.com/blog/bid/70587/calculating-optical-fiber-latency), for the roughly 200,000 km per second figure and the per-kilometer latency math behind the 3ms rule.
 - [The speed of light as the ultimate limit to network latency](https://notes.suhaib.in/docs/tech/physics/how-the-speed-of-light-bounds-network-latency/), for why this is a physics constraint rather than an engineering one.
+- [CFA Institute Standard I(A), Knowledge of the Law](https://www.cfainstitute.org/standards/professionals/code-ethics-standards/standards-of-practice-i-a), for the comply-with-the-stricter-rule convention applied to conflicting jurisdictions.
 
 Next, [capacity planning](/blog/posts/dc-planning-03-capacity-planning/).

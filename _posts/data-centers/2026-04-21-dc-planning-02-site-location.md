@@ -98,4 +98,9 @@ Most practical site selection ends up filtering on regulatory requirements first
 
 The 3ms / 300km rule is the stake in the ground. Everything else negotiates around it.
 
+## Sources
+
+- [Calculating optical fiber latency](https://www.m2optics.com/blog/bid/70587/calculating-optical-fiber-latency), for the roughly 200,000 km per second figure and the per-kilometer latency math behind the 3ms rule.
+- [The speed of light as the ultimate limit to network latency](https://notes.suhaib.in/docs/tech/physics/how-the-speed-of-light-bounds-network-latency/), for why this is a physics constraint rather than an engineering one.
+
 Next, [capacity planning](/blog/posts/dc-planning-03-capacity-planning/).

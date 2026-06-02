@@ -60,6 +60,12 @@ Chirpy already emits canonical tags, BlogPosting and WebPage JSON-LD, Open Graph
 - Keep permalinks stable and human readable. Never change a published permalink.
 - No keyword stuffing. Stay neutral and factual per the writing-style and neutral-framing memories.
 
+### Citations
+
+Every non-obvious factual claim needs a source the reader can follow. Named systems and conventions (Google's Jupiter, Project Apollo, the TPU 3D torus, the 3ms synchronous-replication rule, a vendor feature like Arista SSU, a paper's result) must link to a primary source: the paper, the vendor doc, or the engineering blog, in that order of preference. Prefer inline links on the claim itself. For posts with several sources, a short "Sources" section at the end is fine too. The goal is that a reader who wants to verify or go deeper never has to leave the page guessing. Unsourced confident claims are the main credibility leak in these posts.
+
+### Keywords
+
 Target long-tail phrases and the author's name, not head terms like "AI infrastructure" that large vendors own. The goal set for this site is to be found for data center, AI infrastructure, datacenter networking, and graduate or new-grad and internship job search, plus the name Junghwan (Steve) Kim.
 
 Site-level work that is still pending and gates everything else: verify Google Search Console and Bing Webmaster Tools (the empty fields in `_config.yml` under `webmaster_verifications`) and submit `sitemap.xml`. Nothing ranks until the site is indexed.
